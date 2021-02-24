@@ -1,0 +1,83 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../fonts/NanumGothic.eot');
+    src: url('../fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumGothic.woff2') format('woff2'),
+        url('../fonts/NanumGothic.woff') format('woff'),
+        url('../fonts/NanumGothic.ttf') format('truetype'),
+        url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'NanumGothic';}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, main:after, nav:after, footer:after{content:""; display: block; clear: both;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+/*header part CSS*/
+header{}
+header .top{height: 40px; background-color: #363636;}
+header .top .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px;}
+header .top .wrap .info{float: left;}
+header .top .wrap .info p{color:#ccc; font-size: 14px; line-height: 40px;}
+header .top .wrap .mylink{float: right; padding: 13px 0;}
+header .top .wrap .mylink ul{}
+header .top .wrap .mylink ul li{float: left;}
+header .top .wrap .mylink ul li a{display: block; line-height: 1; border-right: 1px solid #ccc;color:#ccc; padding: 0 5px;font-size: 14px; text-transform: uppercase;}
+header .top .wrap .mylink ul li:last-child a{border:none;}
+header .top .wrap .mylink ul li:hover a{color:#fff;}
+
+
+header .main{height: 80px;  position: relative;}
+header .main .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px;}
+header .main .wrap .logo{float: left; padding: 10px 0;}
+header .main .wrap .logo a{display: block;}
+header .main .wrap .logo a img{display: block; height: 60px;}
+
+header .main .wrap nav{float: right;}
+header .main .wrap nav > ul{}
+header .main .wrap nav > ul > li{float: left; margin: 0 15px;}
+header .main .wrap nav > ul > li:last-child{margin-right: 0;}
+
+header .main .wrap nav > ul > li > a{display: block; font-size: 18px; line-height: 1; padding: 31px 0 27px; border-bottom:4px solid transparent; color:#363636; font-weight: bold;} /*(80-18) / 2 = 31*/
+header .main .wrap nav > ul > li:hover > a{border-bottom: 4px solid #004ea1; color:#004ea1;}
+
+header .main .wrap nav > ul > li > div{position: absolute; width: 100%; left:0; background-color: rgba(255, 255, 255, 0.6); text-align: right; display: none; z-index: 2;}
+
+header .main .wrap nav > ul > li:hover > div{display: block;}
+
+header .main .wrap nav > ul > li > div > ul{width: 1200px; margin: 0 auto; padding: 0 10px; font-size: 0;}
+
+header .main .wrap nav > ul > li:nth-child(1) > div > ul{text-align: center;}
+header .main .wrap nav > ul > li:nth-child(2) > div > ul{text-align: center; padding-left: 180px;}
+
+header .main .wrap nav > ul > li > div > ul > li{display: inline-block; margin: 0 20px;}
+header .main .wrap nav > ul > li > div > ul > li > a{display: block; line-height: 40px; font-size: 14px; color:#363636;}
+header .main .wrap nav > ul > li > div > ul > li:hover > a{color:#004ea1;}
+
+/*footer_part*/
+footer{padding: 20px 0; background-color: #363636; text-align: center; font-size: 0;}
+footer .wrap{width: 1200px; margin: 0 auto;}
+footer .wrap .footer_top{padding-bottom: 14px; }
+footer .wrap .footer_top ul{border-bottom: 1px solid #fff; padding-bottom: 20px;}
+footer .wrap .footer_top ul li{display: inline-block;}
+footer .wrap .footer_top ul li p{line-height: 1; color:#fff; padding: 0 5px; font-size: 14px;border-right: 1px solid #fff;}
+footer .wrap .footer_top ul li:last-child p{border:none;}
+footer .wrap .footer_link{}
+footer .wrap .footer_link ul{}
+footer .wrap .footer_link ul li{display: inline-block;}
+footer .wrap .footer_link ul li a{display: block; font-size: 14px; color:#fff; padding: 0 10px; line-height: 1; border-right:1px solid #fff;}
+footer .wrap .footer_link ul li:last-child a{border:none;}
+
+footer .wrap .footer_main{padding-top: 20px;}
+footer .wrap .footer_main .general{font-size: 14px; color:#fff; padding-bottom: 20px;}
+footer .wrap .footer_main img{height: 55px;}
+footer .wrap .footer_main .copyrights{font-size: 14px; color:#fff; padding-top: 20px;}
